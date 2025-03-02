@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web3 Job Portal</h1>
+        <div class="toggle-container">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <section id="post-job">
+            <h2>Post a Job</h2>
+            <input type="text" id="job-title" placeholder="Job Title">
+            <input type="text" id="job-description" placeholder="Description">
+            <input type="number" id="job-salary" placeholder="Salary (ETH)">
+            <button onclick="postJob()">Post Job</button>
+        </section>
+        <section id="dao-governance">
+            <h2>DAO Governance</h2>
+            <input type="text" id="proposal-description" placeholder="Proposal Description">
+            <button onclick="createProposal()">Create Proposal</button>
+        </section>
+        <section id="ai-recommendations">
+            <h2>AI Job Recommendations</h2>
+            <input type="text" id="skills" placeholder="Enter Your Skills">
+            <button onclick="fetchRecommendations()">Get Recommendations</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

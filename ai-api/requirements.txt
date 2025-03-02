@@ -1,0 +1,14 @@
+# Install Backend (Hardhat + Solidity)
+npm install --save-dev hardhat ethers dotenv @nomicfoundation/hardhat-toolbox
+
+# Install Frontend (React + Web3 + UI Styling)
+npm install next react react-dom ethers web3 tailwindcss postcss autoprefixer
+
+# Install AI Job Recommendation API (Python)
+pip install fastapi uvicorn transformers torch scikit-learn pandas numpy
+
+# Install Deployment & Testing Tools
+npm install --save-dev mocha chai hardhat-gas-reporter solidity-coverage
+
+# Install Snapshot.js for DAO Governance
+npm install @snapshot-labs/snapshot.js

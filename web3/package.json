@@ -1,0 +1,16 @@
+{
+    "name": "web3-job-portal",
+    "version": "1.0.0",
+    "dependencies": {
+      "next": "latest",
+      "react": "latest",
+      "react-dom": "latest",
+      "ethers": "^5.7.0",
+      "web3": "^1.7.4"
+    },
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start"
+    }
+  }

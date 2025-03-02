@@ -1,38 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web3 Job Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Web3 Job Portal</h1>
         <div class="toggle-container">
-            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Toggle Dark Mode</span>
         </div>
     </header>
     <main>
-        <section id="post-job">
+        <section class="card" id="post-job">
             <h2>Post a Job</h2>
             <input type="text" id="job-title" placeholder="Job Title">
-            <input type="text" id="job-description" placeholder="Description">
+            <textarea id="job-description" placeholder="Description"></textarea>
             <input type="number" id="job-salary" placeholder="Salary (ETH)">
             <button onclick="postJob()">Post Job</button>
         </section>
-        <section id="dao-governance">
+
+        <section class="card" id="dao-governance">
             <h2>DAO Governance</h2>
-            <input type="text" id="proposal-description" placeholder="Proposal Description">
+            <input type="text" id="proposal-desc" placeholder="Proposal Description">
             <button onclick="createProposal()">Create Proposal</button>
         </section>
-        <section id="ai-recommendations">
+
+        <section class="card" id="ai-recommendations">
             <h2>AI Job Recommendations</h2>
             <input type="text" id="skills" placeholder="Enter Your Skills">
-            <button onclick="fetchRecommendations()">Get Recommendations</button>
+            <button onclick="getRecommendations()">Get Recommendations</button>
         </section>
     </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Web3 Job Portal. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:rithvikbng@gmail.com">rithvikbng@gmail.com</a></p>
+            <p>Follow us: <a href="#">Twitter</a> | <a href="https://www.linkedin.com/in/rithvik1709">LinkedIn</a></p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
